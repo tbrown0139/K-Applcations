@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knovon Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        .header {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+        }
+
+        .box {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 30%;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            margin: 0 10px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .box img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .box h2 {
+            margin-top: 10px;
+            font-size: 1.5em;
+        }
+
+        .box p {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #666;
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="Company Logo">
+    </div>
+    <div class="header">
+        Select an Application
+    </div>
+    <div class="container">
+        <a class="box" id="vendor" href="https://knovon.org" target="_blank">
+            <img src="vendor-icon.png" alt="Vendor Icon">
+            <h2>Vendor</h2>
+            <p>Our service providers and partners.</p>
+        </a>
+        <a class="box" id="employee" href="https://knovon.org" target="_blank">
+            <img src="employee-icon.png" alt="Employee Icon">
+            <h2>Employee</h2>
+            <p>The people who work for us.</p>
+        </a>
+        <a class="box" id="partner" href="https://knovon.org" target="_blank">
+            <img src="partner-icon.png" alt="Partner Icon">
+            <h2>Partner</h2>
+            <p>Our clients and customers.</p>
+        </a>
+    </div>
+</body>
+</html>
